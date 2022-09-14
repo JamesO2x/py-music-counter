@@ -168,7 +168,7 @@ If we assume each one of our notes is 1/4 note at 120 BPM, each note should last
 
 If each song lasts 6 seconds then it should take approximately 13,074.5 years To play all the songs.
 
-i created a quick spreadsheet that can calculate BPM to time. We may want to speed up the tempofor more reasonable time.
+I created a quick spreadsheet that can calculate BPM to time. We may want to speed up the tempo for more reasonable time.
 
 > https://docs.google.com/spreadsheets/d/1Zich5buTHKERQqeG-9cb3nWS4Sagg-b5BmL7msvlaKU/edit?usp=sharing
 
@@ -188,4 +188,3 @@ i created a quick spreadsheet that can calculate BPM to time. We may want to spe
 | Note Length      |            200 | ms        | 60,000 ms (1 minute) / Tempo (BPM) = Delay Time in ms for quarter-note beats |
 | Song Length      |            2.4 | seconds   |                                                                              |
 | Total Length     |       5,226.32 | years     | The time in years is equal to the seconds divided by 31,556,952              |
-
