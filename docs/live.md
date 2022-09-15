@@ -17,7 +17,9 @@ If each song lasts 6 seconds then it should take approximately 13,074.5 years To
 
 I created a quick spreadsheet that can calculate BPM to time. We may want to speed up the tempo for more reasonable time.
 
-> [Time Calculations - time.ods](../../data/time.ods)
+> - [Time Calculations](../data/)
+> - [Time Calculations - time-static.csv](../data/time-static.csv)
+> - [Time Calculations - time-formulas.csv](../data/time-formulas.csv)
 
 ## 120 bpm Standard
 |                  |                |           |                                                                              |
