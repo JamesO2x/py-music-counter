@@ -19,7 +19,8 @@ I created a quick spreadsheet that can calculate BPM to time. We may want to spe
 
 > https://docs.google.com/spreadsheets/d/1Zich5buTHKERQqeG-9cb3nWS4Sagg-b5BmL7msvlaKU/edit?usp=sharing
 
-| 120 bpm Standard |                |           |                                                                              |
+## 120 bpm Standard
+|                  |                |           |                                                                              |
 |------------------|----------------|-----------|------------------------------------------------------------------------------|
 | # of Melodies    | 68,719,476,735 | melodies  |                                                                              |
 | # of Notes       |             12 | 1/4 notes |                                                                              |
@@ -28,9 +29,9 @@ I created a quick spreadsheet that can calculate BPM to time. We may want to spe
 | Song Length      |              6 | seconds   |                                                                              |
 | Total Length     |      13,065.80 | years     | The time in years is equal to the seconds divided by 31,556,952              |
 
-| 300 bpm Standard |                |           |                                                                              |
+##  300 bpm Standard
+|                  |                |           |                                                                              |
 |------------------|----------------|-----------|------------------------------------------------------------------------------|
-| EXPERIMENTAL:    |                |           |                                                                              |
 | # of Melodies    | 68,719,476,735 | melodies  |                                                                              |
 | # of Notes       |             12 | 1/4 notes |                                                                              |
 | BPM              |            300 | bpm       |                                                                              |

@@ -44,6 +44,4 @@ FAB2 | FAB2 | FABed2
 ```
 
 You can even set The instrument using the standard general MIDI instrumentation numbers:
-> [GM Instrement Bank Numbers](docs/midi.md)
-> [Music Representation Labs](http://www.ccarh.org/courses/253/handout/gminstruments/) - GM Instruments list
-
+> [GM Instrement Bank Numbers](midi.md)
