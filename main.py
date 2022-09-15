@@ -3,12 +3,14 @@ import musicalbeeps
 import random
 
 # Global Vars
-mb = musicalbeeps.Player(volume = 0.3,
+mb = musicalbeeps.Player(volume = 0.05,
                         mute_output = True)
-test = 0
+
 notes = 8  # Number of notes available in our scale
 melody = 12  # Number of Notes in a melody
 total = notes**melody # Total melodies using exponent
+
+option = 0 # used for menu
 
 # Song Vars
 randID = 0 # A random melody ID number
@@ -53,13 +55,7 @@ def print_menu1():
 def option1():
     rand_mel()
     convert_ID()
-
-    print('Random ID #: ' + "{:,}".format(randID) )
-    print('OCT ID    #: ' + octID )
-    print('ABC ID    #: ' + abcID)
-    print('BEEP Arr  #: ' )
-    print(beep)
-
+    show_ID()
     play_song()
 
 def option2():
@@ -67,12 +63,16 @@ def option2():
     for i in range(8):
         next_mel()
         convert_ID()
-        print('Next Melody: BEEP Arr  #: ' )
-        print(beep)
+        print('>>> Next Melody:: ' )
+        show_ID()
         play_song()
 
 def option3():
-    print('Handle option \'Option 3\'')
+    set_mel()
+    convert_ID()
+    print('>>> SET Melody:: ' )
+    show_ID()
+    play_song()
 
 
 # ███████╗██╗   ██╗███╗   ██╗ ██████╗████████╗██╗ ██████╗ ███╗   ██╗███████╗
@@ -86,7 +86,7 @@ def play_song():
 
     # Populate the ABC's and beep arrays
     for i, note in enumerate(beep):
-        mb.play_note(note, 0.1)
+        mb.play_note(note, 0.15)
     return
 
 def rand_mel():
@@ -100,6 +100,11 @@ def next_mel():
     # Loop around if ID exceeds maximum
     if randID > total:
         randID = 0
+    return
+
+def set_mel():
+    global randID
+    randID = 32052307826 # Saria's Song
     return
 
 def convert_ID():
@@ -124,6 +129,14 @@ def convert_ID():
         beep[i] = note_table[temp][2]
     
     abcID = ''.join(abc)
+    return
+
+def show_ID():
+    print('ID        #: ' + "{:,}".format(randID) )
+    print('OCT ID    #: ' + octID )
+    print('ABC ID    #:   ' + abcID)
+    print('BEEP Arr  #: ' )
+    print(beep)
     return
 
 # ==================================================
