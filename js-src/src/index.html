@@ -14,8 +14,8 @@ https://dopiaza.org/tools/datauri/index.php
 
 		<table class="box">
 			<tr>
-				<td>Total:</td>
-				<td id="total"></td>
+				<th>Total:</th>
+				<th id="total"></th>
 			</tr>
 			<tr>
 				<td>Integer ID:</td>
@@ -25,9 +25,16 @@ https://dopiaza.org/tools/datauri/index.php
 				<td>Octal ID:</td>
 				<td id="octal"></td>
 			</tr>
-			<tr>
+<!-- 			<tr>
 				<td>Note ID:</td>
 				<td id="notes"></td>
+			</tr>			 -->
+			<tr>
+				<td>Note ID Input:</td>
+				<td class="user-input">
+					<input type="text" id="noteInput" value="" maxlength="12" style="text-align:right;"/>
+					<button onclick="submitMe('noteInput')" id="testButton">Submit</button>
+				</td>
 			</tr>
 			<tr>
 				<td>Staff ID:</td>
@@ -37,7 +44,9 @@ https://dopiaza.org/tools/datauri/index.php
 			</tr>
 			<tr>
 				<td>Binary ID:</td>
-				<td id="binary"></td>
+				<td>
+					<span id="binary"></span>
+				</td>
 			</tr>
 			<tr>
 				<td>Barcode ID:</td>
@@ -138,8 +147,9 @@ https://dopiaza.org/tools/datauri/index.php
 		</table>
 	</details>
 
-	<p class="box">
-		Generate a random number. The number is then converted into different forms: octals, binary, note staff, barcode, and pixel dot matrix.
-	</p>
+	<div class="box">
+		<p>Generate a random number. The number is then converted into different forms: octals, binary, note staff, barcode, and pixel dot matrix. Press <em>START</em> to begin counting up.</p>
+		<p>Use the <em>Note Table</em> and <em>Note ID Input</em> field to change the Integer ID.</p>
+	</div>
 
 </div>

@@ -1,7 +1,13 @@
 /* Color Scheme */
+
+/*  
+color ref:
+https://www.colorhexa.com/222233
+*/
 :root {
 	--main-fg-color: white;
 	--main-bg-color: black;
+	--special-color: #ffcb00;
 	--border-color: #669;
 	--box-fill-color: #223;
 	--button-color: #559;
@@ -21,6 +27,10 @@ body {
 #content {
 	margin: auto;
 max-width: 800px;
+}
+
+em {
+	color: var(--special-color);
 }
 
 /* Canvas Styling */
@@ -59,10 +69,13 @@ td {
 }
 th {
 	font-size: larger;
+	color: var(--special-color);
 }
 
 input[type="text"],
 textarea {
+	font-family: monospace;
+	font-size: larger;
 	background-color: var(--main-bg-color);
 	color: var(--main-fg-color);
 	border: 1px solid var(--border-color);
@@ -85,9 +98,20 @@ button {
 	min-width: 40px;
 }
 
-.two-column button {
+.two-column button,
+.two-column input {
 	width: calc(50% - 26px);
 	min-width: 40px;
+}
+
+.user-input input {
+	width: calc(75% - 26px);
+	min-width: 40px;
+}
+
+.user-input button {
+	width: calc(25% - 26px);
+	min-width: 20px;
 }
 
 button.good {
@@ -144,3 +168,14 @@ button.bad {
 	image-rendering: crisp-edges;
 	image-rendering: pixelated;
 }
+
+
+#binary {
+	background-color: #112;
+/* 	color: var(--button-color); */
+	color: var(--bad-color);
+	font-style: monospace;
+	padding: 4px 8px;
+}
+
+b {color: var(--special-color);}
