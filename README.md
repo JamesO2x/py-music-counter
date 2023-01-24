@@ -19,3 +19,6 @@
 
 ---
 
+# Check out this JS implementation of "ABC notation" for reference.
+- [abcjs editor](https://www.abcjs.net/abcjs-editor.html)
+

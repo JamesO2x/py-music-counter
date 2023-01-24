@@ -2,6 +2,9 @@
 import musicalbeeps
 import random
 
+# Javascript version:
+# https://codepen.io/jameso2/pen/yLqvGWJ?editors=0011
+
 # Global Vars
 mb = musicalbeeps.Player(volume = 0.05,
                         mute_output = True)

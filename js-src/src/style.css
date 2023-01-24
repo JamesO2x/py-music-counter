@@ -1,0 +1,146 @@
+/* Color Scheme */
+:root {
+	--main-fg-color: white;
+	--main-bg-color: black;
+	--border-color: #669;
+	--box-fill-color: #223;
+	--button-color: #559;
+	--good-color: #282;
+	--bad-color: #c44;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	color: var(--main-fg-color);
+	background-color: var(--main-bg-color);
+}
+
+#content {
+	margin: auto;
+max-width: 800px;
+}
+
+/* Canvas Styling */
+canvas {
+	border: 1px solid var(--border-color);
+	padding: 1px;
+	margin: 8px;
+}
+
+/* Menu Boxes */
+.box {
+	padding: 10px;
+	margin: 16px;
+	background-color: var(--box-fill-color);
+	border: 1px solid var(--border-color);
+	border-radius: 4px;
+	width: calc(100% - 32px);
+	max-width: 800px;
+	text-align: center;
+}
+
+table {
+	font-family: monospace;
+	font-size: larger;
+	border-collapse: collapse;
+	width: 100%;
+}
+table.fixed {
+	table-layout: fixed;
+}
+th,
+td {
+	border: 1px dashed var(--border-color);
+	border-collapse: collapse;
+	padding: 4px;
+}
+th {
+	font-size: larger;
+}
+
+input[type="text"],
+textarea {
+	background-color: var(--main-bg-color);
+	color: var(--main-fg-color);
+	border: 1px solid var(--border-color);
+	padding: 8px;
+	margin: 8px;
+	border-radius: 4px;
+	width: calc(45% - 16px);
+	min-width: 80px;
+}
+
+button {
+	background-color: var(--button-color);
+	color: var(--main-fg-color);
+	border: 1px solid var(--main-fg-color);
+	padding: 8px;
+	margin: 8px;
+	font-weight: bold;
+	border-radius: 4px;
+	width: calc(100% - 16px);
+	min-width: 40px;
+}
+
+.two-column button {
+	width: calc(50% - 26px);
+	min-width: 40px;
+}
+
+button.good {
+	background-color: var(--good-color);
+}
+button.bad {
+	background-color: var(--bad-color);
+}
+
+#debug-text {
+	width: calc(100% - 16px);
+	min-width: 40px;
+	height: 400px;
+	min-height: 100px;
+	resize: vertical;
+}
+
+/* Headings inside of a Box Div */
+.box h1,
+.box h2,
+.box h3,
+.box h4,
+.box h5,
+.box h6 {
+	padding: 12px;
+	margin: -8px -8px 0 -8px;
+	background-color: var(--box-fill-color);
+	/*   border: 1px solid var(--main-bg-color); */
+	border-radius: 16px;
+	max-width: 800px;
+	text-align: left;
+}
+
+#barcode {
+	width: 80%;
+	height: 80px;
+	image-rendering: auto;
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
+}
+
+#staff {
+	width: 80%;
+	height: 80%;
+	image-rendering: auto;
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
+}
+
+#pixmap {
+	width: 20%;
+	height: 20%;
+	image-rendering: auto;
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
+}
